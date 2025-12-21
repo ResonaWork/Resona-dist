@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /painel
+Disallow: /api-test
+
+Sitemap: https://resona.app/sitemap.xml
