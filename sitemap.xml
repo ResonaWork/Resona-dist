@@ -2,56 +2,108 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://resona.app</loc>
-    <lastmod>2025-12-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://resona.app/sobre</loc>
-    <lastmod>2025-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://resona.app/artistas</loc>
-    <lastmod>2025-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://resona.app/estabelecimentos</loc>
-    <lastmod>2025-12-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://resona.app/blog</loc>
-    <lastmod>2025-12-22</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://resona.app/contato</loc>
-    <lastmod>2025-12-22</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://resona.app/planos</loc>
-    <lastmod>2025-12-22</lastmod>
-    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/blog</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/artistas</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/estabelecimentos</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://resona.app/login</loc>
-    <lastmod>2025-12-22</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://resona.app/cadastro</loc>
-    <lastmod>2025-12-22</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/artista/2a8f7a69-9ec9-4a86-8a43-ab05a0c4eaaa</loc>
+    <lastmod>2025-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/artista/bc243746-40e2-48cb-94d0-954bdfcd6ece</loc>
+    <lastmod>2025-12-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/estabelecimento/ab8c1af0-9b15-4138-9a64-44a2a19f87dd</loc>
+    <lastmod>2025-11-13</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/artista/897cf4c4-7ade-4d6c-a28b-c72adcc59de2</loc>
+    <lastmod>2025-11-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/estabelecimento/a9217861-3739-41fc-ad64-f39fc1e702e2</loc>
+    <lastmod>2025-12-08</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/estabelecimento/f1aa0ec0-1658-4d01-a5bc-c5db262f9f43</loc>
+    <lastmod>2025-11-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/estabelecimento/7fd6235a-8de9-4a73-b687-f56229f6d771</loc>
+    <lastmod>2025-11-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/artista/b432bce6-ca9a-4dc1-abcf-db94351100e0</loc>
+    <lastmod>2025-11-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/estabelecimento/83b39748-d71a-46df-9cfe-5a3b3f0aa4cf</loc>
+    <lastmod>2025-11-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/estabelecimento/0802055e-6c3a-4f2b-8711-f49000622443</loc>
+    <lastmod>2025-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/artista/221d4684-1d3f-4e8d-a2c5-7caf933b9b16</loc>
+    <lastmod>2025-11-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/artista/e185686b-8ba2-413f-8c6a-f88a75f93fc8</loc>
+    <lastmod>2025-12-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/estabelecimento/8c8d6ce8-f519-4a23-9a82-c22940e8f540</loc>
+    <lastmod>2025-12-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://resona.app/blog/Boas-vindas</loc>
+    <lastmod>2025-11-12</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
