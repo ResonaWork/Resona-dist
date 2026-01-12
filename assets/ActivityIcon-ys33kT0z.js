@@ -1,0 +1,1 @@
+import{j as o}from"./index-Cc-Lnn9x.js";const s=({className:t="w-6 h-6"})=>o.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",className:t,fill:"none",viewBox:"0 0 24 24",stroke:"currentColor",strokeWidth:2,children:o.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",d:"M13 10V3L4 14h7v7l9-11h-7z"})});export{s as A};
