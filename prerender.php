@@ -21,9 +21,12 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
     $protocol = 'https';
 }
 
-$host = $_SERVER['HTTP_HOST'];
-$uri = $_SERVER['REQUEST_URI'];
+$host = $_SERVER['HTTP_HOST'] ?? 'www.resona.app.br';
+$uri = $_SERVER['REQUEST_URI'] ?? '/';
 $originalUrl = $protocol . '://' . $host . $uri;
+
+// Adiciona Header para Debug na Ferramenta Network (Se quiser checar depois) 
+header('X-Prerender-Hit: ' . $originalUrl);
 
 // 3. Montando a URL da API Prerender
 $prerenderApiUrl = 'https://service.prerender.io/' . $originalUrl;
