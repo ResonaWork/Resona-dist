@@ -2,28 +2,25 @@
   RewriteEngine On
   RewriteBase /
 
-  # 1) PRE-RENDER CONFIGURATION (SEO PARA BOTS)
-  # Defina seu token do Prerender.io aqui (Crie a conta no prerender.io para pegar seu token)
-  <IfModule mod_headers.c>
-    RequestHeader set X-Prerender-Token "Va3s7hBnP19Zfpnc7XkS"
-  </IfModule>
-
+  # 1) PRE-RENDER CONFIGURATION (SEO PARA BOTS) VIA SCRIPT PHP (Compatível com Hostinger)
+  
   # Condição A: Se a requisição vier de um Bot de Busca ou Rede Social
   RewriteCond %{HTTP_USER_AGENT} googlebot|bingbot|yandex|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator|whatsapp [NC,OR]
   RewriteCond %{QUERY_STRING} _escaped_fragment_
   
-  # Condição B: Se NÃO for uma requisição para um arquivo estático conhecido
+  # Condição B: Se NÃO for uma requisição para arquivos estáticos ou para o próprio script proxy
   RewriteCond %{REQUEST_URI} !\.(js|css|xml|less|png|jpg|jpeg|gif|pdf|doc|txt|ico|rss|zip|mp3|rar|exe|wmv|doc|avi|ppt|mpg|mpeg|tif|wav|mov|psd|ai|xls|mp4|m4a|swf|dat|dmg|iso|flv|m4v|torrent|ttf|woff|svg|eot)$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !prerender\.php [NC]
   
-  # Redireciona a requisição (como Proxy) para o Prerender.io processar
-  # (Se estivermos no ambiente local ele ignora pela ausência do Proxy, mas na Hostinger vai processar)
-  RewriteRule ^(.*)$ https://service.prerender.io/https://%{HTTP_HOST}/$1 [P,L]
+  # Redireciona a requisição para script intermediário usando cURL
+  RewriteRule ^(.*)$ /prerender.php [L]
 
   # 2) ROTEAMENTO PADRÃO DE SPA (React/Vite) PARA USUÁRIOS REAIS
-  # Se o aquivo acessado não existir fisicamente (-f e -d), mande para o index.html
+  # Se o arquivo acessado não existir fisicamente (-f e -d), mande para o index.html
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !prerender\.php [NC]
   RewriteRule . /index.html [L]
 </IfModule>
 
