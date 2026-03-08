@@ -4,8 +4,8 @@
 
   # 1) PRE-RENDER CONFIGURATION (SEO PARA BOTS) VIA SCRIPT PHP (Compatível com Hostinger)
   
-  # Condição A: Se a requisição vier de um Bot de Busca ou Rede Social
-  RewriteCond %{HTTP_USER_AGENT} googlebot|bingbot|yandex|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator|whatsapp [NC,OR]
+  # Condição A: Se a requisição vier de um Bot de Busca, Rede Social ou do PRÓPRIO Testador do Prerender
+  RewriteCond %{HTTP_USER_AGENT} googlebot|bingbot|yandex|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator|whatsapp|prerender [NC,OR]
   RewriteCond %{QUERY_STRING} _escaped_fragment_
   
   # Condição B: Se NÃO for uma requisição para arquivos estáticos ou para o próprio script proxy
